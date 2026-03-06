@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before & After | Bhandari Super Speciality Dental</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+  margin:0;
+  font-family:'Plus Jakarta Sans',sans-serif;
+  background:linear-gradient(to bottom, #f5fafd, #eaf6fb);
+}
+
+/* Header */
+header{
+  background: rgb(248, 242, 242);
+  color:#004466;
+  padding:1.5rem;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+header h2{
+  margin:0;
+  font-weight:600;
+  letter-spacing:0.5px;
+}
+
+/* Back Button */
+.back-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin:1.5rem 5%;
+  padding:8px 16px;
+  background:white;
+  color:#00668c;
+  font-weight:600;
+  text-decoration:none;
+  border-radius:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  transition:all 0.3s ease;
+}
+
+.back-btn:hover{
+  background:#00668c;
+  color:white;
+  transform:translateY(-3px);
+}
+
+/* Section */
+.section{
+  padding:2rem 5% 4rem;
+}
+
+/* Grid */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:2rem;
+}
+@media(max-width:992px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:600px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card */
+.card{
+  background:white;
+  border-radius:1.5rem;
+  padding:1.8rem;
+  box-shadow:0 15px 35px -10px rgba(0,68,102,0.18);
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 40px -8px rgba(0,68,102,0.25);
+}
+
+.card h3{
+  text-align:center;
+  margin-bottom:1.5rem;
+  color:#003952;
+  font-weight:600;
+}
+
+/* Images */
+.images{
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.image-box{
+  position:relative;
+  width:48%;
+}
+
+.image-box img{
+  width:100%;
+  border-radius:1rem;
+  transition:transform 0.3s ease;
+}
+
+.image-box img:hover{
+  transform:scale(1.05);
+}
+
+/* Before/After Label */
+.label{
+  position:absolute;
+  bottom:10px;
+  left:10px;
+  background:rgba(0,0,0,0.7);
+  color:white;
+  font-size:0.8rem;
+  padding:4px 10px;
+  border-radius:20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .image-box{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Smile Transformations – Before & After</h2>
+</header>
+
+<a href="index.html" class="back-btn">
+  <i class="fas fa-arrow-left"></i> Back to Home
+</a>
+
+<div class="section">
+  <div class="grid">
+
+   
+    <div class="card">
+      <div class="images">
+        <div class="image-box">
+          <img src="images/b1.png" alt="Before Whitening">
+          <div class="label">Before</div>
+        </div>
+        <div class="image-box">
+          <img src="images/a1.png" alt="After Whitening">
+          <div class="label">After</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="images">
+        <div class="image-box">
+          <img src="images/b2.png" alt="Before Whitening">
+          <div class="label">Before</div>
+        </div>
+        <div class="image-box">
+          <img src="images/a2.png" alt="After Whitening">
+          <div class="label">After</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="images">
+        <div class="image-box">
+          <img src="images/b3.png" alt="Before Smile Makeover">
+          <div class="label">Before</div>
+        </div>
+        <div class="image-box">
+          <img src="images/a3.png" alt="After Smile Makeover">
+          <div class="label">After</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="images">
+        <div class="image-box">
+          <img src="images/b4.png" alt="Before Smile Makeover">
+          <div class="label">Before</div>
+        </div>
+        <div class="image-box">
+          <img src="images/a4.png" alt="After Smile Makeover">
+          <div class="label">After</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="images">
+        <div class="image-box">
+          <img src="images/b5.png" alt="Before Smile Makeover">
+          <div class="label">Before</div>
+        </div>
+        <div class="image-box">
+          <img src="images/a5.png" alt="After Smile Makeover">
+          <div class="label">After</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

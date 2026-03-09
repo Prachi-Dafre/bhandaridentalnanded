@@ -795,72 +795,116 @@
     }
 
     /* contact */
-    /* Contact Social Links */
-    .social-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 6px;
+    /* contact */
 
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: 500;
-      transition: 0.3s ease;
-    }
+/* Contact Social Links */
+.social-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:6px;
+  text-decoration:none;
+  color:var(--primary);
+  font-weight:500;
+  transition:0.3s ease;
+}
 
-    .social-link i {
-      font-size: 1.1rem;
-    }
+.social-link i{
+  font-size:1.1rem;
+}
 
-    .social-link:hover {
-      color: var(--accent);
-    }
+.social-link:hover{
+  color:var(--accent);
+}
 
-    .contact-grid {
-      background: white;
-      border-radius: 2.5rem;
-      padding: 2rem;
-      box-shadow: var(--shadow-lg);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
 
-    .contact-info {
-      flex: 1 1 250px;
-    }
+/* CONTACT GRID LAYOUT */
+.contact-grid{
+  background:white;
+  border-radius:2.5rem;
+  padding:2.5rem;
+  box-shadow:var(--shadow-lg);
 
-    .info-item {
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
+  display:flex;
+  align-items:flex-start;
+  gap:3rem;
+}
 
-    .info-item i {
-      background: var(--accent-soft);
-      width: 48px;
-      height: 48px;
-      border-radius: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary);
-      font-size: 1.4rem;
-    }
 
-    .map-wrap {
-      flex: 2 1 350px;
-      border-radius: 2rem;
-      overflow: hidden;
-    }
+/* LEFT SIDE INFO */
+.contact-info{
+  flex:1;
+}
 
-    .map-wrap iframe {
-      width: 100%;
-      height: 250px;
-      border: 0;
-    }
 
+/* INFO ITEMS */
+.info-item{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  margin-bottom:1.5rem;
+}
+
+.info-item i{
+  background:var(--accent-soft);
+  width:48px;
+  height:48px;
+  border-radius:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--primary);
+  font-size:1.4rem;
+}
+
+
+/* MAP SECTION (RIGHT SIDE) */
+.map-section{
+  flex:1;
+  text-align:center;
+}
+
+
+/* MAP IMAGE */
+.map-section img{
+  width:100%;
+  border-radius:1rem;
+  box-shadow:var(--shadow-md);
+}
+
+
+/* MAP BUTTON */
+.map-btn{
+  margin-top:15px;
+}
+
+.map-btn a{
+  background:#0077b6;
+  color:white;
+  padding:12px 22px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.map-btn a:hover{
+  background:#005f8a;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+  .contact-grid{
+    flex-direction:column;
+  }
+
+  .map-section{
+    margin-top:1rem;
+  }
+
+}
     /* footer */
     footer {
       background: #002b3b;
@@ -1180,6 +1224,7 @@
       cursor: pointer;
       color: #888;
     }
+
   </style>
 </head>
 
@@ -1605,15 +1650,16 @@ Thank you so much sir for giving beautiful smile 😊"</p>
           </div>
         </div>
       </div>
-<div class="map-wrap">
-  <iframe 
-    src="https://maps.google.com/maps?q=Bhandari%20Super%20Speciality%20Dental%20Clinic%20Nanded&output=embed"
-    width="100%" 
-    height="350" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
+<div class="map-section">
+  
+  <img src="images/map.png" alt="Clinic Location">
+
+  <div class="map-btn">
+    <a href="https://www.google.com/maps/search/?api=1&query=Bhandari+Super+Speciality+Dental+Clinic+Nanded" target="_blank">
+      Get Directions
+    </a>
+  </div>
+
 </div>
     </div>
   </section>
